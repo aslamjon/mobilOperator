@@ -1,0 +1,66 @@
+$bg-color: #E5E5E5;
+
+
+@font-face{
+    font-family: 'sf-pro';
+    src: url('../San-Francisco-Pro-Fonts-master/SF-Pro-Display-Black.otf') format(truetype);
+}
+@import "footer";
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'sf-pro', sans-serif;
+    background-color: $bg-color;
+}
+.section-10{
+    .circle{
+        width: 5px;
+        height: 5px;
+        padding: 5px;
+        background: #D8D8D8;
+        border-radius: 50%;
+    }
+    .card{
+        
+        border-radius: 4px;
+        .imgg{
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+    }
+    .card-body{
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+    .card-body:hover{
+        opacity: 1;
+    }
+    .article{
+        margin-left: 20%;
+    }
+}
+@media (max-width: 567px) {
+    .section-10{
+        // .card{
+        //     width: 348px !important;
+        // }
+        .mediaa{
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+    .section-10{
+        // .card{
+        //     width: 435px !important;
+        // }
+        .mediaa{
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .article{
+            margin-left: 20%;
+        }
+    }
+}

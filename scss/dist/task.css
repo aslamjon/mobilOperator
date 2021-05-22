@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "sf-pro";
+  src: url("../San-Francisco-Pro-Fonts-master/SF-Pro-Display-Black.otf") format(truetype);
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "sf-pro", sans-serif;
+  background-color: #E5E5E5;
+}
+
+.section-10 .circle {
+  width: 5px;
+  height: 5px;
+  padding: 5px;
+  background: #D8D8D8;
+  border-radius: 50%;
+}
+.section-10 .card {
+  border-radius: 4px;
+}
+.section-10 .card .imgg {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.section-10 .card-body {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.section-10 .card-body:hover {
+  opacity: 1;
+}
+.section-10 .article {
+  margin-left: 20%;
+}
+
+@media (max-width: 567px) {
+  .section-10 .mediaa {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+  .section-10 .mediaa {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .section-10 .article {
+    margin-left: 20%;
+  }
+}

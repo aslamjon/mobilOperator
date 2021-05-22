@@ -1,0 +1,164 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+    @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+    }
+    }
+
+@import "fonts";
+@import "aloqa";
+@import "footer";
+
+
+
+
+body {
+    background: #E5E5E5;
+}
+
+
+
+.fs18 {
+    font-size: 18px;
+line-height: 26px;
+}
+
+.fs20 {
+    font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+}
+
+.fs26 {
+    font-size: 26px;
+     line-height: 36px;
+}
+
+.fs30 {
+    font-size: 30px;
+     line-height: 36px;
+}
+
+.fs300 {
+    font-size: 30px;
+     line-height: 36px;
+     font-weight: 600;
+}
+
+.sectioncard1,
+.sectioncard2 {
+    .container{
+        .row {
+            .col-md-4 {
+                &:hover .card {
+                    color: black;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+                 .card {
+                    border: 1px solid transparent;
+                  
+                 }
+                    
+                
+            }
+        }
+    }
+}
+
+
+@media (max-width: 320px) {
+    .sectioncard1 {
+        .container{
+            .row {        
+                .fs300 {
+                    font-size: 20px;
+                    text-align: center;
+                   
+                 }
+                }
+            }
+        }
+}
+
+
+
+
+@media (max-width: 567px){
+    .sectioncard1,
+    .sectioncard2 {
+        .container{
+            .row {
+                .fs300 {
+                    font-size: 20px;
+                 
+                }
+                .col-md-4 {
+                  max-width: 400px;
+                  margin: 0 auto;
+                   &:nth-child(3),
+                   &:nth-child(2) {
+                       margin-top: 25px;
+                   }
+                   .card {
+                       img {
+                           width: 100%;
+                       }
+                   }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 568px) and (max-width: 767px) {
+    .sectioncard1,
+.sectioncard2 {
+    .container{
+        .row {
+            .col-md-4 {
+               &:nth-child(3) {
+                   margin-top: 25px;
+               }
+                .card {
+                    .card-footer {
+                        .cardfoot {
+                          .sana {
+                              font-size: 14px;
+                          }
+                          .ikki {
+                            font-size: 14px;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
